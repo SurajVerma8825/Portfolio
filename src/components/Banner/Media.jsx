@@ -1,60 +1,83 @@
-import React from "react";
-import { FaTwitter, FaLinkedinIn, FaReact, FaGithub } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiNodedotjs } from "react-icons/si";
+import { FaGithub, FaLinkedinIn, FaReact, FaTwitter } from 'react-icons/fa';
+import { SiExpress, SiMongodb, SiNodedotjs } from 'react-icons/si';
 
 const Media = () => {
+  const iconStyle =
+    'w-14 h-14 flex items-center justify-center rounded-xl bg-white/30 backdrop-blur-md border border-white/20 text-2xl text-designColor shadow-md hover:scale-105 hover:text-white hover:bg-designColor transition duration-300';
+
   return (
-    <>
-      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
-        <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
-          <div className="flex gap-4">
-            <a href="https://www.linkedin.com/in/suraj-ver789">
-              <span className="bannerIcon">
-                <FaLinkedinIn />
-              </span>
+    <div className="flex flex-col gap-4">
+      <div className="flex justify-between items-center gap-4 flex-wrap px-12">
+        {/* Social Links */}
+        <div className="flex flex-col gap-3">
+          <h2 className="text-sm uppercase font-semibold text-gray-500 text-center">
+            Find me in
+          </h2>
+          <div className="flex gap-4 cursor-pointer">
+            <a
+              href="https://www.linkedin.com/in/suraj-ver789"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={iconStyle}
+              title="LinkedIn"
+            >
+              <FaLinkedinIn />
             </a>
-            <a href="https://github.com/Himanshu8825">
-              <span className="bannerIcon">
-                <FaGithub />
-              </span>
+            <a
+              href="https://github.com/Himanshu8825"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={iconStyle}
+              title="GitHub"
+            >
+              <FaGithub />
             </a>
-            <a href="https://twitter.com/suraj_ver789">
-              <span className="bannerIcon">
-                <FaTwitter />
-              </span>
+            <a
+              href="https://twitter.com/suraj_ver789"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={iconStyle}
+              title="Twitter"
+            >
+              <FaTwitter />
             </a>
           </div>
         </div>
-        <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">BEST SKILL ON</h2>
+
+        {/* Skills Icons */}
+        <div className="flex flex-col gap-3 cursor-pointer">
+          <h2 className="text-sm uppercase font-semibold text-gray-500 text-center">
+            Best Skill On
+          </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
+            <div className={iconStyle} title="MongoDB">
               <SiMongodb />
-            </span>
-            <span className="bannerIcon">
+            </div>
+            <div className={iconStyle} title="Express.js">
               <SiExpress />
-            </span>
-            <span className="bannerIcon">
+            </div>
+            <div className={iconStyle} title="React">
               <FaReact />
-            </span>
-            <span className="bannerIcon">
+            </div>
+            <div className={iconStyle} title="Node.js">
               <SiNodedotjs />
-            </span>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Download CV */}
       <div>
         <a
           href="https://drive.google.com/uc?export=download&id=1kmvTfQwzhq0-s8BWxAEHuIGuR_ybwUhH"
           download="CV_Himanshu.pdf"
         >
-          <button className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent">
+          <button className="w-full h-12 rounded-xl text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-[#ff014f] to-[#ff6f61] hover:from-[#ff6f61] hover:to-[#ff014f] transition duration-300 shadow-md">
             Download CV
           </button>
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
