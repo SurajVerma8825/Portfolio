@@ -33,8 +33,8 @@ const LeftBanner = () => {
             I craft seamless digital experiences
           </span>
           with{' '}
-          <span className="underline decoration-pink-400 decoration-2">
-            clean code
+          <span className="  decoration-2">
+            clean code {' '}
           </span>
           and{' '}
           <span className="italic text-purple-600">meaningful animations</span>.

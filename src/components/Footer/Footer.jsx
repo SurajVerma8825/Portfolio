@@ -1,150 +1,87 @@
 import React from "react";
-import {  FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import {  logo4 } from "../../assets/index";
+import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { logo4 } from "../../assets";
 
 const Footer = () => {
   return (
-    <div className="w-full px-16 py-8 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
-      <div className="w-full h-full flex flex-col gap-8">
-        <div className="flex gap-2 items-center">
-          <img src={logo4} alt="logo" className="w-[40px] rounded-full" />
-          <p className=" text-xl font-medium uppercase font-bodyFont ">
-            verma
-          </p>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
-          </h2>
-          <div className="flex gap-4">
-            <a href="https://www.linkedin.com/in/suraj-ver789">
-              <span className="bannerIcon">
-                <FaLinkedinIn />
-              </span>
-            </a>
-            <a href="https://github.com/Himanshu8825">
-              <span className="bannerIcon">
-                <FaGithub />
-              </span>
-            </a>
-            <a href="https://twitter.com/suraj_ver789">
-              <span className="bannerIcon">
-                <FaTwitter />
-              </span>
-            </a>
+    <div className="">
+      <div className="grid py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 backdrop-blur-xl bg-white/60 border border-white/40  shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-6 transition-all duration-300">
+        {/* Logo & Social */}
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center gap-3">
+            <img src={logo4} alt="logo" className="w-12 h-12 rounded-full shadow-md" />
+            <h1 className="text-2xl font-bold uppercase tracking-widest text-gray-800">
+              Verma
+            </h1>
+          </div>
+          <div>
+            <h2 className="text-base font-semibold text-gray-700 uppercase tracking-wider">
+              Find Me On
+            </h2>
+            <div className="flex gap-4 mt-3">
+              <a href="https://www.linkedin.com/in/suraj-ver789" target="_blank" rel="noopener noreferrer">
+                <span className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-[#ff0080] text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+                  <FaLinkedinIn />
+                </span>
+              </a>
+              <a href="https://github.com/Himanshu8825" target="_blank" rel="noopener noreferrer">
+                <span className="w-10 h-10 rounded-full bg-gradient-to-tr from-gray-700 to-gray-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+                  <FaGithub />
+                </span>
+              </a>
+              <a href="https://twitter.com/suraj_ver789" target="_blank" rel="noopener noreferrer">
+                <span className="w-10 h-10 rounded-full bg-gradient-to-tr from-sky-400 to-blue-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+                  <FaTwitter />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
-          Quick Link
-        </h3>
-        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              About
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Portfolio
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Services
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Blog
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Contact
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
-          RESOURCES
-        </h3>
-        <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Authentication
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              System Status
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Terms of Service
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Pricing
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Over Right
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
-          DEVELOPERS
-        </h3>
-        <ul className="flex flex-col gap-4 font-titleFont font-medium overflow-hidden py-6">
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Documentation
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Authentication
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              API Reference
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Support
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Open Source
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-        </ul>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#ff0080] uppercase tracking-wider mb-4">
+            Quick Links
+          </h3>
+          <ul className="flex flex-col gap-3 text-gray-700 text-base font-medium">
+            {["About", "Portfolio", "Services", "Blog", "Contact"].map((item, idx) => (
+              <li key={idx} className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors">
+                {item}
+                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Resources */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#ff0080] uppercase tracking-wider mb-4">
+            Resources
+          </h3>
+          <ul className="flex flex-col gap-3 text-gray-700 text-base font-medium">
+            {["Authentication", "System Status", "Terms of Service", "Pricing", "Over Right"].map((item, idx) => (
+              <li key={idx} className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors">
+                {item}
+                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Developers */}
+        <div>
+          <h3 className="text-lg font-semibold text-[#ff0080] uppercase tracking-wider mb-4">
+            Developers
+          </h3>
+          <ul className="flex flex-col gap-3 text-gray-700 text-base font-medium">
+            {["Documentation", "Authentication", "API Reference", "Support", "Open Source"].map((item, idx) => (
+              <li key={idx} className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors">
+                {item}
+                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="group-hover:text-[#ff014f] transition"
+                className="group-hover:text-[#ff014f] transition [&.active]:text-[#ff0080]"
               >
                 {title}
               </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 {navLinksdata.map((item) => (
                   <li
                     key={item._id}
-                    className="text-gray-700 hover:text-[#ff014f] text-base tracking-wide font-medium transition"
+                    className="text-gray-700  hover:text-[#ff014f] text-base tracking-wide font-medium transition"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}

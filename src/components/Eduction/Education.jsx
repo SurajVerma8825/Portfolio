@@ -24,7 +24,7 @@ const Education = () => {
               title: 'Master Of Computer Application',
               subTitle:
                 'Technocrats Institute Of Technology Bhopal (2024 - 2026)',
-              result: '0/10',
+              result: '7/10',
               des: 'Currently pursuing an MCA at TIT Bhopal (2024-2026), affiliated with RGPV University.',
             },
             {

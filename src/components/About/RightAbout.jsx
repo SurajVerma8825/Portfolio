@@ -13,7 +13,7 @@ const RightAbout = () => {
         delivery platform—each featuring role-based access, real-time updates,
         and seamless UX.
         <br />
-        <br />
+        
         My strength lies in{' '}
         <span className="text-[#ff014f] font-semibold">
           full-stack architecture
