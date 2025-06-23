@@ -1,14 +1,8 @@
-import React from "react";
-
 const Title = ({ title, des }) => {
   return (
-    <div className="flex flex-col gap-4 font-titleFont mb-14 lgl:mt-0 mt-[6rem]">
-      <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
-        {title}
-      </h3>
-      <h1 className="xl:text-4xl text-2xl  md:text-5xl text-gray-300 font-bold capitalize">
-        {des}
-      </h1>
+    <div className="text-center mb-10">
+      <h3 className="text-xl text-[#7928ca] font-semibold tracking-wider uppercase">{des}</h3>
+      <h2 className="text-4xl font-bold text-[#1e2024] mt-2">{title}</h2>
     </div>
   );
 };

@@ -1,26 +1,44 @@
 import React from "react";
 import { HiArrowRight } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const Card = ({ item: { title, des, icon: Icon } }) => {
   return (
-    <div className="w-full px-12 h-80 py-10 rounded-lg shadow-shadowOne flex items-center bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100 group">
-      <div className="h-72 overflow-y-hidden">
-        <div className="flex h-full flex-col gap-4 translate-y-16 group-hover:translate-y-0 transition-transform duration-500">
-          <div className="w-10 h-8 flex flex-col justify-between">
-            {Icon && <Icon className="text-5xl text-designColor" />}
-          </div>
-          <div className="flex flex-col gap-2">
-            <h2 className="text-xl md:text-2xl font-titleFont font-bold text-gray-300">
-              {title}
-            </h2>
-            <p className="base">{des}</p>
-            <span className="text-2xl text-designColor">
-              <HiArrowRight />
-            </span>
-          </div>
+    <motion.div
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 15px 50px rgba(0, 0, 0, 0.15)",
+      }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="w-full h-80 px-6 py-8 rounded-3xl bg-white/60 backdrop-blur-lg border border-white/30 shadow-md group cursor-pointer"
+    >
+      <div className="flex h-full flex-col justify-between">
+        {/* Icon with pop effect */}
+        <motion.div
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="flex items-center justify-center w-14 h-14 rounded-full bg-[#ff014f]/10 text-[#ff014f] text-3xl"
+        >
+          {Icon && <Icon />}
+        </motion.div>
+
+        <div className="mt-6 flex flex-col gap-2">
+          <h2 className="text-xl md:text-2xl font-bold text-[#1e2024] group-hover:text-[#ff014f] transition-colors duration-300">
+            {title}
+          </h2>
+          <p className="text-[15px] text-gray-700 leading-relaxed">{des}</p>
+
+          {/* Arrow slide-in on hover */}
+          <motion.span
+            whileHover={{ x: 8 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="text-2xl text-[#ff014f] mt-2"
+          >
+            <HiArrowRight />
+          </motion.span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
