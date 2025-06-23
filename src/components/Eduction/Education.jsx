@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 import ResumeCard from './ResumeCard';
 
 const Education = () => {
@@ -7,61 +6,90 @@ const Education = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row  gap-10 lgl:gap-20"
+      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
-      {/* part one */}
+      {/* Education */}
       <div className="lgl:w-1/2 w-full">
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2017 - 2023</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+        <div className="py-6 font-titleFont flex flex-col gap-2">
+          <p className="text-sm text-designColor tracking-[3px] uppercase">
+            2017 - 2026
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1e2024]">
+            Education Quality
+          </h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Master Of Computer Application"
-            subTitle="Technocrats Institute Of Technology Bhopal (TIT)  (2024 - 2024)"
-            result="0/10"
-            des="Currently pursuing an MCA at Technocrats Institute of Technology (TIT), Bhopal (2024-2026), affiliated with RGPV University. Building on a strong foundation from my secondary education, I am now embarking on a path of advanced learning and professional development."
-          />
-          <ResumeCard
-            title="B.Sc in Information Technology"
-            subTitle="Patliputra University Patna (2020 - 2023)"
-            result="6.1/10"
-            des="Graduated from CIMAGE College Patna in 2023, under Patliputra University, refining skills for dynamic career paths and cultural contributions."
-          />
-          <ResumeCard
-            title="Intermidiate"
-            subTitle="S N Sinha College (2017 - 2017)"
-            result="7.8/10"
-            des="Intermidiate from S N Sinha College, Aurangabad, in 2019 under the BSEB Board, specializing in PCM stream, laying the groundwork for higher academic pursuits."
-          />
+        <div className="mt-6 flex flex-col gap-6">
+          {[
+            {
+              title: 'Master Of Computer Application',
+              subTitle:
+                'Technocrats Institute Of Technology Bhopal (2024 - 2026)',
+              result: '0/10',
+              des: 'Currently pursuing an MCA at TIT Bhopal (2024-2026), affiliated with RGPV University.',
+            },
+            {
+              title: 'B.Sc in Information Technology',
+              subTitle: 'Patliputra University (2020 - 2023)',
+              result: '61.9%/100%',
+              des: 'Graduated from CIMAGE College, Patna under Patliputra University.',
+            },
+            {
+              title: 'Intermediate',
+              subTitle: 'S N Sinha College (2017 - 2019)',
+              result: '78.4%/100%',
+              des: 'PCM stream under BSEB Board, Aurangabad.',
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white/60 backdrop-blur-lg border border-white/30 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.1)]
+  transition-all duration-300 hover:shadow-[0_12px_45px_rgba(0,0,0,0.2)] hover:scale-[1.02] hover:bg-white/70 hover:border-white/40 cursor-pointer"
+            >
+              <ResumeCard {...item} />
+            </div>
+          ))}
         </div>
       </div>
-      {/* part Two */}
 
+      {/* Job Experience */}
       <div className="lgl:w-1/2 w-full">
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
+        <div className="py-6 font-titleFont flex flex-col gap-2">
+          <p className="text-sm text-designColor tracking-[3px] uppercase">
+            2020 - 2024
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1e2024]">
+            Job Experience
+          </h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Frontend Developer Intern"
-            subTitle="Brand Monkey (Feb - April - 2024)"
-            result="Noida (Delhi)"
-            des="Engaged as a Frontend Developer Intern at Brand Monkey, Noida (Delhi) from February to April 2024, specializing in React.js. Leveraged expertise to contribute dynamically to projects, embracing Google's hiring culture and fostering team synergy."
-          />
-          <ResumeCard
-            title="Web Developer Intern"
-            subTitle="Afame Technologies - (Jan - 2014)"
-            result="Virtual"
-            des="Embarked on a virtual Web Developer Internship journey at Afame Technologies in January 2014, delving into the realms of web development for a 30-day duration. Despite the challenges of securing roles in Malaysia, embraced the opportunity to hone skills alongside highly qualified homegrown graduates."
-          />
-          <ResumeCard
-            title="Full Stack Trainee"
-            subTitle="Zepskill By Placewit - (2022 - 2023)"
-            result="Virtual"
-            des="Enrolled as a Full Stack Trainee at Zepskill By Placewit from January 2022 to August 2023, undertaking a virtual bootcamp experience. Guided by mentors, mastered the MERN stack and C++ programming languages, amidst Oman's evolving economy."
-          />
+        <div className="mt-6 flex flex-col gap-6">
+          {[
+            {
+              title: 'Frontend Developer Intern',
+              subTitle: 'Brand Monkey (Feb - Apr 2024)',
+              result: 'Noida',
+              des: 'Worked with React.js in live projects at Brand Monkey, Delhi.',
+            },
+            {
+              title: 'Web Developer Intern',
+              subTitle: 'Afame Technologies (Jan 2024)',
+              result: 'Virtual',
+              des: '30-day virtual internship focusing on web development.',
+            },
+            {
+              title: 'Full Stack Trainee',
+              subTitle: 'Zepskill (2022 - 2023)',
+              result: 'Virtual',
+              des: 'Trained in MERN stack and C++ with mentor guidance.',
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white/60 backdrop-blur-lg border border-white/30 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.1)]
+  transition-all duration-300 hover:shadow-[0_12px_45px_rgba(0,0,0,0.2)] hover:scale-[1.02] hover:bg-white/70 hover:border-white/40 cursor-pointer"
+            >
+              <ResumeCard {...item} />
+            </div>
+          ))}
         </div>
       </div>
     </motion.div>
