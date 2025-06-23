@@ -49,3 +49,14 @@
 .overflow-x-hidden::-webkit-scrollbar{
   width: 0;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+
+/* bg-white/60 backdrop-blur-lg rounded-3xl border border-white/20 shadow-[0_10px_40px_rgba(0,0,0,0.15)] */

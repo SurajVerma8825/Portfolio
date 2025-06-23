@@ -4,7 +4,7 @@ import myImage from "../../assets/images/bannerImg.png";
 const RightBanner = () => {
   return (
     <div className="w-full lg:w-[40%] flex justify-center items-center px-4">
-      <div className="relative flex items-center justify-center p-10 lg:px-14 py-16 bg-white/60 backdrop-blur-lg rounded-3xl border border-white/20 shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
+      <div className="relative flex items-center justify-center p-10 lg:px-14 py-16   ">
 
         {/* Animated Glowing Ring — Only visible behind image */}
         <div className="absolute w-[440px] h-[440px] lg:w-[520px] lg:h-[520px] rounded-full bg-gradient-to-tr from-[#ff0080] via-[#7928ca] to-[#2afadf] animate-spin-slow blur-2xl opacity-30 z-0"></div>

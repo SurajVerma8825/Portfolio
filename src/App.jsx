@@ -17,12 +17,12 @@ const App = () => {
       <Navbar />
       <Banner />
       <AboutMe />
-      <Feature />
+       <Feature />
       <Projects />
       <Resume />
       <Contact />
       <Footer />
-      <FooterBottom />
+      <FooterBottom /> 
     </div>
   );
 };
