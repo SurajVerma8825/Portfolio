@@ -44,7 +44,7 @@ const ProjectsData = [
     img: HireHub,
     title: 'Hire-Hub',
     github: 'https://github.com/Himanshu8825/Job-Portal.git',
-    liveLink: 'https://github.com/Himanshu8825/Job-Portal.git',
+    liveLink: 'https://job-portal-kpvv.onrender.com/',
     description:
       "'Hire-Hub' is my MERN stack project, using Tailwind CSS , Shad Cn , and Redux .  You can add a job and also students apply their job according to their skills . offering an intuitive user experience. ",
   },

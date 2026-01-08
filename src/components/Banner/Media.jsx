@@ -24,7 +24,7 @@ const Media = () => {
               <FaLinkedinIn />
             </a>
             <a
-              href="https://github.com/Himanshu8825"
+              href="https://github.com/SurajVerma8825"
               target="_blank"
               rel="noopener noreferrer"
               className={iconStyle}

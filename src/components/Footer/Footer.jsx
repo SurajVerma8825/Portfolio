@@ -1,6 +1,5 @@
-import React from "react";
-import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { logo4 } from "../../assets";
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { logo4 } from '../../assets';
 
 const Footer = () => {
   return (
@@ -9,7 +8,11 @@ const Footer = () => {
         {/* Logo & Social */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
-            <img src={logo4} alt="logo" className="w-12 h-12 rounded-full shadow-md" />
+            <img
+              src={logo4}
+              alt="logo"
+              className="w-12 h-12 rounded-full shadow-md"
+            />
             <h1 className="text-2xl font-bold uppercase tracking-widest text-gray-800">
               Verma
             </h1>
@@ -19,17 +22,29 @@ const Footer = () => {
               Find Me On
             </h2>
             <div className="flex gap-4 mt-3">
-              <a href="https://www.linkedin.com/in/suraj-ver789" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/suraj-ver789"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-[#ff0080] text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
                   <FaLinkedinIn />
                 </span>
               </a>
-              <a href="https://github.com/Himanshu8825" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/SurajVerma8825"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="w-10 h-10 rounded-full bg-gradient-to-tr from-gray-700 to-gray-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
                   <FaGithub />
                 </span>
               </a>
-              <a href="https://twitter.com/suraj_ver789" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/suraj_ver789"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="w-10 h-10 rounded-full bg-gradient-to-tr from-sky-400 to-blue-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
                   <FaTwitter />
                 </span>
@@ -44,12 +59,17 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="flex flex-col gap-3 text-gray-700 text-base font-medium">
-            {["About", "Portfolio", "Services", "Blog", "Contact"].map((item, idx) => (
-              <li key={idx} className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors">
-                {item}
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-              </li>
-            ))}
+            {['About', 'Portfolio', 'Services', 'Blog', 'Contact'].map(
+              (item, idx) => (
+                <li
+                  key={idx}
+                  className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors"
+                >
+                  {item}
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                </li>
+              )
+            )}
           </ul>
         </div>
 
@@ -59,8 +79,17 @@ const Footer = () => {
             Resources
           </h3>
           <ul className="flex flex-col gap-3 text-gray-700 text-base font-medium">
-            {["Authentication", "System Status", "Terms of Service", "Pricing", "Over Right"].map((item, idx) => (
-              <li key={idx} className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors">
+            {[
+              'Authentication',
+              'System Status',
+              'Terms of Service',
+              'Pricing',
+              'Over Right',
+            ].map((item, idx) => (
+              <li
+                key={idx}
+                className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors"
+              >
                 {item}
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               </li>
@@ -74,8 +103,17 @@ const Footer = () => {
             Developers
           </h3>
           <ul className="flex flex-col gap-3 text-gray-700 text-base font-medium">
-            {["Documentation", "Authentication", "API Reference", "Support", "Open Source"].map((item, idx) => (
-              <li key={idx} className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors">
+            {[
+              'Documentation',
+              'Authentication',
+              'API Reference',
+              'Support',
+              'Open Source',
+            ].map((item, idx) => (
+              <li
+                key={idx}
+                className="group relative w-max cursor-pointer hover:text-[#ff0080] transition-colors"
+              >
                 {item}
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#ff0080] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               </li>

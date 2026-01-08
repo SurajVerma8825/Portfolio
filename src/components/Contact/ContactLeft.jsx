@@ -40,7 +40,7 @@ const ContactLeft = () => {
             </span>
           </a>
           <a
-            href="https://github.com/Himanshu8825"
+            href="https://github.com/SurajVerma8825"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform duration-300 hover:scale-110"
