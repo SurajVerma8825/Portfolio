@@ -69,7 +69,7 @@ const Media = () => {
       {/* Download CV */}
       <div>
         <a
-          href="https://drive.google.com/file/d/1uRTjlhMH8o2-TyfIxuPLXriVU0IiFQM4/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1grX96o3KqWptlkK1uQLpmCGhxcEQrhko/view?usp=drivesdk"
           download="CV_Suraj.pdf"
         >
           <button className="w-full h-12 rounded-xl text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-[#ff014f] to-[#ff6f61] hover:from-[#ff6f61] hover:to-[#ff014f] transition duration-300 shadow-md">
